@@ -1,6 +1,6 @@
 # Eae! Aqui quem fala é o Drack!
 
-<img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" />
+<img align="right" alt="GIF" height="160px" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" />
 
 ## Eu ainda sou um aprendiz nesse grande mundo da programação.
 
