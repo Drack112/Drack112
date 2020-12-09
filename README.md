@@ -19,7 +19,17 @@
 
 ---
 
-![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=drack112&theme=dark&show_icons=true)
+<br/>
+
+  <h2 align="center"> Github Statistics 📈 </h2>
+  
+  <div align="center"> 
+    <a href="">
+      <img align="center" src="https://github-readme-stats.vercel.app/api?username=drack112&theme=dark&show_icons=true"/>
+    </a>
+</div>
+
+<br/>
 
 ---
 
