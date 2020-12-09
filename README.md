@@ -6,7 +6,7 @@
 
 - 👨‍💻 Atualmente estou focando meu tempo em aprender JavaScript, Python e NodeJS.
 - 📚 Estou fazendo projetos diversificados para aplicar em minhas futuras linhas coloridas de HTML 😅
-- 💪🏼 Objetivoss: Aprender ReactJS, construir aplicações web sem dificuldade e ir pro mobile!
+- 💪🏼 Objetivos: Aprender ReactJS, construir aplicações web sem dificuldade e ir pro mobile!
 - ⚡ Algumas OS que utilizo para desenvolver: Fedora, Funtoo, ArchLinux e Ubuntu 🎱.
 
 ---
@@ -35,6 +35,17 @@
 ![VS Code](http://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=ffffff)
 
 ---
+<br/>
+
+  <h2 align="center"> Github Statistics 📈 </h2>
+  
+  <div align="center"> 
+    <a href="">
+      <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=drack112&theme=react&line_height=40&hide=css"/>
+    </a>
+</div>
+
+<br/>
 
 Credit: [Bgstatic](https://github.com/Bgstatic)
 
