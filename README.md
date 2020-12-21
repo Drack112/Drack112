@@ -25,7 +25,7 @@
   
   <div align="center"> 
     <a href="">
-      <img align="center" src="https://github-readme-stats.vercel.app/api?username=drack112&theme=dark&show_icons=true"/>
+      <img align="center" src="https://github-readme-stats.vercel.app/api?username=Drack112&theme=dark&show_icons=true"/>
     </a>
 </div>
 
