@@ -7,7 +7,7 @@
 - 👨‍💻 Atualmente estou focando meu tempo em aprender JavaScript, Python e NodeJS.
 - 📚 Estou fazendo projetos diversificados para aplicar em minhas futuras linhas coloridas de HTML 😅
 - 💪🏼 Objetivos: Aprender ReactJS, construir aplicações web sem dificuldade e ir pro mobile!
-- ⚡ Sistema que uso para desenvolver: FreeBSD🎱.
+- ⚡ Sistema que uso para desenvolver: Ubuntu 20.10🎱.
 
 ---
 
