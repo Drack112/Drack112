@@ -4,9 +4,9 @@
 
 ## Eu ainda sou um aprendiz nesse grande mundo da programação.
 
-- 👨‍💻 Atualmente estou focando meu tempo em aprender JavaScript, Python e NodeJS.
+- 👨‍💻 Atualmente estou focando meu tempo em aprender JavaScript, Python, Ruby e NodeJS.
 - 📚 Estou fazendo projetos diversificados para aplicar em minhas futuras linhas coloridas de HTML 😅
-- 💪🏼 Objetivos: Aprender ReactJS, construir aplicações web sem dificuldade e ir pro mobile!
+- 💪🏼 Objetivos: Apronfundar em Rails, construir aplicações web sem dificuldade e ir pro mobile!
 - ⚡ Sistema que uso para desenvolver: Ubuntu 20.04.2 🎱.
 
 ---
