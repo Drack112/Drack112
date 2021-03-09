@@ -52,7 +52,7 @@
   <h2 align="center"> Github Statistics 📈 </h2>
   
   <div align="center"> 
-    <a href="">
+    <a>
       <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=drack112&theme=react&line_height=40&hide=css"/>
     </a>
 </div>
