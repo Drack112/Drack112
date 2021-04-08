@@ -7,7 +7,7 @@
 - 👨‍💻 Atualmente estou focando meu tempo em aprender JavaScript, Python, Ruby e NodeJS.
 - 📚 Estou fazendo projetos diversificados para aplicar em minhas futuras linhas coloridas de HTML 😅
 - 💪🏼 Objetivos: Apronfundar em Rails, construir aplicações web sem dificuldade e ir pro mobile!
-- ⚡ Sistema que uso para desenvolver: Elementary OS 🎱.
+- ⚡ Sistema que uso para desenvolver: Pop!_OS 🎱.
 
 ---
 
