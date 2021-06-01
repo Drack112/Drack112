@@ -1,14 +1,14 @@
 ```javascript
 const aboutMe = {
-   code: [Javascript, Typescript, HTML, CSS, Python, Ruby],
+   code: [Javascript, Typescript, HTML, CSS, Python, Ruby, Java],
    technologies: {
       frontEnd: {
          js: ["React", "Angular"],
-         css: ["Materialize", "Bootstrap", "Material Design"]
+         css: ["css3", "Bootstrap", "sass"]
       },
       backEnd: {
          js: ["Node", "Express", "Nest"],
-         misc: ["Bash", "Linux", "Docker"]
+         misc: ["Bash", "Linux", "Docker", "Spring"]
       },
       databases: ["MongoDB", "mySQL", "Ruby On Rails"],
    },
