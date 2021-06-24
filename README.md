@@ -1,6 +1,6 @@
 ```javascript
 const aboutMe = {
-   code: [Javascript, Typescript, HTML, CSS, Python, Ruby, Java],
+   code: [Javascript, Typescript, HTML, CSS, Python Java],
    technologies: {
       frontEnd: {
          js: ["React", "Next"],
@@ -10,7 +10,7 @@ const aboutMe = {
          js: ["Node", "Express", "Nest"],
          misc: ["Bash", "Linux", "Docker", "Spring"]
       },
-      databases: ["MongoDB", "mySQL", "Ruby On Rails"],
+      databases: ["MongoDB", "mySQL"],
       android_ios: [" React Native"]
    },
    currentOccupation: ["Um estudante que quer explorar mais e mais as linhas que encontra do Github"],
