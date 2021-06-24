@@ -8,7 +8,7 @@ const aboutMe = {
       },
       backEnd: {
          js: ["Node", "Express", "Nest"],
-         misc: ["Bash", "Linux", "Docker", "Spring"]
+         misc: ["Bash", "Linux", "Docker"]
       },
       databases: ["MongoDB", "mySQL"],
       android_ios: [" React Native"]
