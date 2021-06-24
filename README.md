@@ -1,6 +1,6 @@
 ```javascript
 const aboutMe = {
-   code: [Javascript, Typescript, HTML, CSS, Python Java],
+   code: [Javascript, Typescript, HTML, CSS, Python],
    technologies: {
       frontEnd: {
          js: ["React", "Next"],
