@@ -32,8 +32,8 @@ const anmol = {
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>Sempre gosto de conhecer novas pessoas, então pode me mandar uma mensagem se quiser! ( Se eu não responder é porque capotei no teclado )</b> 😊</em>
 
 ---
-<!--START_SECTION:waka-->
 
+<!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
 
 **These Readme stats are generated using Github Action [awesome-readme-stats](https://github.com/anmol098/waka-readme-stats)**
