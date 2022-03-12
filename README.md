@@ -1,3 +1,39 @@
-<div adlign="center">
-  <img src="https://metrics.lecoq.io/Drack112?template=classic&isocalendar=1&languages=1&stars=1&followup=1&people=1&code=1&activity=1&achievements=1&notable=1&lines=1&repositories=1&gists=1&introduction=1&repositories=100&repositories.batch=100&repositories.forks=false&repositories.affiliations=owner&isocalendar.duration=half-year&languages.ignored=html%2C%20css&languages.limit=8&languages.threshold=0%25&languages.colors=github&languages.sections=most-used&languages.details=bytes-size%2C%20percentage&languages.indepth=true&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&stars.limit=4&followup.sections=repositories&followup.indepth=true&people.limit=24&people.identicons=false&people.size=28&people.types=followers%2C%20following&people.shuffle=false&code.lines=12&code.load=100&code.days=3&code.visibility=public&code.languages=javascript%2C%20typescript%2C%20go%2C%20ruby%2C%20python&activity.limit=5&activity.load=300&activity.days=14&activity.visibility=all&activity.timestamps=true&activity.filter=all&achievements.threshold=C&achievements.secrets=true&achievements.display=compact&achievements.limit=0&notable.from=organization&notable.repositories=true&notable.indepth=true&notable.types=commit&introduction.title=true&config.timezone=America%2FSao_Paulo&config.twemoji=true&config.octicon=true&config.padding=8%2C%208%20%2B%2011%25" width="70%" />
-</div>
+<h2>Hi, my name is João Vitor (or for my friends, Drack)!☕<h2>
+<img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
+<p>Estudande de programação com intuito de ser um Backend Developer.<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
+</em></p>
+
+### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> Algumas informações...
+
+```javascript
+const anmol = {
+    pronouns: "He" | "Him",
+    code: ["Javascript", "Typescript", "Python", "Go"],
+    askMeAbout: ["web dev", "tech", "coffe", "Warframe <3"],
+    technologies: {
+        mobileApp: ["Expo"],
+        frontEnd: {
+            js: ["React", "Next"],
+            css: ["material-ui", "styled-components", "bootstrap"]
+        },
+        backEnd: {
+            js: ["node", "express", "nestJS"],
+            python: ["django"]
+        },
+        devOps: ["AWS", "Docker🐳", "Nginx"],
+        databases: ["mongo", "MySql", "PgSQL"],
+        misc: ["Firebase", "Socket.IO", "selenium"]
+    },
+    currentProject: "Atualmente não focando em nenhum projeto.",
+    funFact: "DistroHopper"
+};
+```
+
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>Sempre gosto de conhecer novas pessoas, então pode me mandar uma mensagem se quiser! ( Se eu não responder é porque capotei no teclado )</b> 😊</em>
+
+---
+<!--START_SECTION:waka-->
+
+<!--END_SECTION:waka-->
+
+**These Readme stats are generated using Github Action [awesome-readme-stats](https://github.com/anmol098/waka-readme-stats)**
