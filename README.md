@@ -1,4 +1,4 @@
-<h2>Hi, my name is João Vitor (or for my friends, Drack)!☕<h2>
+<h2>Hi, my name is João Vitor (or for my friends, Drack)☕<h2>
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
 <p>Estudande de programação com intuito de ser um Backend Developer.<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
