@@ -27,4 +27,7 @@ jobs:
           SHOW_COMMIT: "True"
           SHOW_DAYS_OF_WEEK: "True"
           SHOW_OS: "True"
-          LOCALE: "pt-br"
+          SHOW_PROFILE_VIEWS: "False"
+          SHOW_EDITORS: "True"
+          SHOW_TIMEZONE: "True"
+          LOCALE: en
