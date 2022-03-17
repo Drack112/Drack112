@@ -8,7 +8,7 @@
 ```javascript
 const anmol = {
     pronouns: "He" | "Him",
-    code: ["Javascript", "Typescript", "Python", "Go"],
+    code: ["Javascript", "Typescript", "Python"],
     askMeAbout: ["web dev", "tech", "coffe", "Warframe <3"],
     technologies: {
         mobileApp: ["Expo"],
@@ -25,6 +25,7 @@ const anmol = {
         misc: ["Firebase", "Socket.IO", "selenium"]
     },
     currentProject: "Atualmente não focando em nenhum projeto.",
+    learning: ["Go"].
     funFact: "DistroHopper"
 };
 ```
