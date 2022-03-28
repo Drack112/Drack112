@@ -20,12 +20,12 @@ const anmol = {
             js: ["node", "express", "nestJS"],
             python: ["django"]
         },
-        devOps: ["AWS", "Docker🐳", "Nginx"],
+        devOps: ["Docker🐳"],
         databases: ["mongo", "MySql", "PgSQL"],
-        misc: ["Firebase", "Socket.IO", "selenium"]
+        misc: ["Socket.IO"]
     },
     currentProject: "Atualmente não focando em nenhum projeto.",
-    learning: ["Go"].
+    learning: ["Go", "Firebase", "selenium", "AWS", "Nginx"].
     funFact: "DistroHopper"
 };
 ```
