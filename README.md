@@ -1,4 +1,4 @@
-<h2>Opa! Meu nome é João Vitor porém alguns me chamam de ( Drack )☕<h2>
+<h2>Opa! Meu nome é João Vitor porém alguns me chamam de ( Drack ) ☕<h2>
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
 <p>Estudande de programação com intuito de ser um Backend Developer.<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
@@ -14,14 +14,14 @@ const anmol = {
         mobileApp: ["Expo"],
         frontEnd: {
             js: ["React", "Next"],
-            css: ["material-ui", "styled-components", "bootstrap"]
+            css: ["styled-components", "bootstrap"]
         },
         backEnd: {
-            js: ["node", "express", "nestJS"],
+            js: ["node", "express", "NestJS"],
             python: ["django"]
         },
         devOps: ["Docker🐳"],
-        databases: ["mongo", "MySql", "PgSQL"],
+        databases: ["MongoDB", "MySQL", "PgSQL"],
         misc: ["Socket.IO"]
     },
     currentProject: "Atualmente não focando em nenhum projeto.",
