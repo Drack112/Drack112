@@ -9,6 +9,7 @@
 const anmol = {
     pronouns: "He" | "Him",
     code: ["Javascript", "Typescript", "Python"],
+    main: ["Backend"],
     askMeAbout: ["web dev", "tech", "coffe", "Warframe <3"],
     technologies: {
         mobileApp: ["Expo"],
@@ -17,15 +18,15 @@ const anmol = {
             css: ["styled-components", "bootstrap"]
         },
         backEnd: {
-            js: ["node", "express", "NestJS"],
-            python: ["django"]
+            js: ["express", "NestJS"],
+            python: ["django", "flask"]
         },
         devOps: ["Docker🐳"],
         databases: ["MongoDB", "MySQL", "PgSQL"],
-        misc: ["Socket.IO"]
+        misc: ["Socket.IO", "Cloudinary"]
     },
     currentProject: "Atualmente não focando em nenhum projeto.",
-    learning: ["Go", "Firebase", "selenium", "AWS", "Nginx"].
+    learning: ["Go", "Firebase", "selenium", "AWS", "Nginx", "AdonisJS"].
     funFact: "DistroHopper"
 };
 ```
