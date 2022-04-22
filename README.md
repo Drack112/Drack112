@@ -23,10 +23,10 @@ const anmol = {
         },
         devOps: ["Docker🐳"],
         databases: ["MongoDB", "MySQL", "PgSQL"],
-        misc: ["Socket.IO", "Cloudinary"]
+        misc: ["Socket.IO", "Cloudinary", "Go"]
     },
     currentProject: "Atualmente não focando em nenhum projeto.",
-    learning: ["Go", "Firebase", "selenium", "AWS", "Nginx", "AdonisJS"].
+    learning: ["Firebase", "selenium", "AWS", "Nginx", "AdonisJS"].
     funFact: "DistroHopper"
 };
 ```
