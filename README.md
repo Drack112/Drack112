@@ -1,37 +1,42 @@
-<h2>Opa! Meu nome é João Vitor porém alguns me chamam de ( Drack ) ☕<h2>
-<img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
-<p>Estudande de programação com intuito de ser um Backend Developer.<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
-</em></p>
+<h1 align="center">🐱 Opa, como vai?</h1>
+<h3 align="center">📜 Visitando meu perfil? Prazer, pode me chamar de João Vitor</h3>
 
-### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> Algumas informações...
+<br>
+<p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
-```javascript
-const anmol = {
-    pronouns: "He" | "Him",
-    code: ["Javascript", "Typescript", "Python"],
-    main: ["Backend"],
-    askMeAbout: ["web dev", "tech", "coffe", "Warframe <3"],
-    technologies: {
-        mobileApp: ["Expo"],
-        frontEnd: {
-            js: ["React", "Next"],
-            css: ["styled-components", "bootstrap"]
-        },
-        backEnd: {
-            js: ["express", "NestJS"],
-            python: ["django", "flask"]
-        },
-        devOps: ["Docker🐳"],
-        databases: ["MongoDB", "MySQL", "PgSQL"],
-        misc: ["Socket.IO", "Cloudinary", "Go"]
-    },
-    currentProject: "Atualmente não focando em nenhum projeto.",
-    learning: ["Firebase", "selenium", "AWS", "Nginx", "AdonisJS"].
-    funFact: "DistroHopper"
-};
-```
 
-<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>Sempre gosto de conhecer novas pessoas, então pode me mandar uma mensagem se quiser! ( Se eu não responder é porque capotei no teclado )</b> 😊</em>
+- 🌱 Atualmente focando em desenvolvimento Web Backend.
+
+- 🚀 Focando os aprendizados em banco de dados, deploy e alguns conceitos de DevOps
+
+- 📫 Contato :- Me Chame pelo Discord através do nick **Drack#5767**
+
+- ⚡ Fun fact :- Sem café, sem produtividade ( isso inclue minhas músicas ) 🎵.
+- 🎮 Quer jogar? Me chame no Warframe e vamo bora! 
+
+Connect with me:
+
+[<img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />](https://twitter.com/JooVito01752052)[<img src = "https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">](https://www.instagram.com/vitoralcantara122/)
+
+**Languages:**
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+**Databases:**
+
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
+
+**DevOps and Deploy:**
+
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 ---
 
