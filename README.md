@@ -5,9 +5,9 @@
 <p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
 
-- 🌱 Atualmente focando em desenvolvimento Web Backend.
+- 🌱 Atualmente focado em desenvolvimento Web Backend.
 
-- 🚀 Focando os aprendizados em banco de dados, deploy e alguns conceitos de DevOps
+- 🚀 Focando os aprendizados em deploy, micro-serviços e um pouco de DevOps
 
 - 📫 Contato :- Me Chame pelo Discord através do nick **Drack#5767**
 
