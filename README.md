@@ -5,7 +5,7 @@
 <p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
 
-- 🌱 Atualmente focado em desenvolvimento Web Backend.
+- 🌱 Atualmente focado em desenvolvimento Web Backend ( E quebrando a cabeça com Kafka e RabbitMQ ).
 
 - 🚀 Focando os aprendizados em deploy, micro-serviços e um pouco de DevOps
 
