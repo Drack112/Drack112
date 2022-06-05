@@ -5,10 +5,10 @@
 <p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
 
-- 🌱 Atualmente focado em desenvolvimento Web Backend ( E quebrando a cabeça com Kafka e RabbitMQ ).
+- 🌱 Atualmente focado em desenvolvimento Web Backend ( E quebrando a cabeça com Kafka e RabbitMQ ), estou estudando deploy, micro-serviços e um pouco de DevOps.
+- 🚀 Iniciando em Golang e querendo se especializar.
 
-- 🚀 Focando os aprendizados em deploy, micro-serviços e um pouco de DevOps
-
+- 🔭 No momento não estou trabalhando.
 - 📫 Contato :- Me Chame pelo Discord através do nick **Drack#5767**
 
 - ⚡ Fun fact :- Sem café, sem produtividade ( isso inclue minhas músicas ) 🎵.
