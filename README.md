@@ -6,7 +6,7 @@
 
 
 - 🌱 Atualmente focado em desenvolvimento Web Backend ( E quebrando a cabeça com Kafka e RabbitMQ ), estou estudando deploy, micro-serviços e um pouco de DevOps.
-- 🚀 Iniciando em Rust e querendo se especializar.
+- 🚀 Iniciando em RabbitMQ e sistema de fileiras.
 
 - 🔭 No momento não estou trabalhando.
 - 📫 Contato :- Me Chame pelo Discord através do nick **Drack#5767**
