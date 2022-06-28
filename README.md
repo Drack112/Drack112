@@ -6,12 +6,17 @@
 
 
 - 🌱 Atualmente focado em desenvolvimento Web Backend ( E quebrando a cabeça com Kafka e RabbitMQ ), estou estudando deploy, micro-serviços e um pouco de DevOps.
-- 🚀 Iniciando em RabbitMQ e sistema de fileiras.
+
+- :computer: Mesmo não atuando em Frontend ou Mobile, sempre gosto de experimentar um pouco das ferremntas de ambas as áreas.
+
+- 🚀 Fanboy das IDE da Jetbrains e Vscode
 
 - 🔭 No momento não estou trabalhando.
-- 📫 Contato :- Me Chame pelo Discord através do nick **Drack#5767**
+
+- 📫 Contato :- Me Chame pelo Discord através do nick **Drack#5767** ou pelas minhas redes sociais abaixo;
 
 - ⚡ Fun fact :- Sem café, sem produtividade ( isso inclue minhas músicas ) 🎵.
+
 - 🎮 Quer jogar? Me chame no Warframe e vamo bora! 
 
 Connect with me:
