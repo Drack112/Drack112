@@ -7,7 +7,7 @@
 
 - 🌱 Atualmente focado em desenvolvimento Web Backend ( E quebrando a cabeça com Kafka e RabbitMQ ), estou estudando deploy, micro-serviços e um pouco de DevOps.
 
-- :computer: Mesmo não atuando em Frontend ou Mobile, sempre gosto de experimentar um pouco das ferremntas de ambas as áreas.
+- :computer: Mesmo não atuando em Frontend ou Mobile, sempre gosto de experimentar um pouco das ferramentas de ambas as áreas.
 
 - 🚀 Fanboy das IDE da Jetbrains e Vscode
 
