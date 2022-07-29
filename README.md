@@ -4,6 +4,8 @@
   Desenvolvedor Backend que usa mil distros linux, bebe café mais do que bebe água, diz que odeia programação quando o código da errado mas fala que ama quando acerta, fanboy das IDE da Jetbrains e um adolescente que passa quase mil horas no PC (Minhas métricas não mentem). E também amante de Warframe.
 </p>
 
+<p><strong>Atualmente Off por conta de estar estudando para o ENEM</strong></p>
+
 <p align="left">
   🦄 Linguagens:
   
