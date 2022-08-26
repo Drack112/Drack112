@@ -40,7 +40,7 @@
 ---
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-376%20hrs%207%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-376%20hrs%2022%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-11-blue)
 
@@ -50,7 +50,7 @@
 
 > 🏆 345 Contributions in the Year 2022
  > 
-> 📦 111.2 kB Used in GitHub's Storage 
+> 📦 111.7 kB Used in GitHub's Storage 
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -119,7 +119,7 @@ JavaScript               2 repos             ⣿⣿⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 
 
 
- Last Updated on 25/08/2022 01:28:56 UTC
+ Last Updated on 26/08/2022 01:21:09 UTC
 <!--END_SECTION:waka-->
 
 **These Readme stats are generated using Github Action [awesome-readme-stats](https://github.com/anmol098/waka-readme-stats)**
