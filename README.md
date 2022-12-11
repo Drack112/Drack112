@@ -58,7 +58,7 @@
 <br>
 
 <h2 align="center">👨🏻‍💻&ensp; <i>Ｐｒｏｊｅｔｏｓ</i> &ensp;👨🏻‍💻</h2>
-<img align="right" src="https://i.pinimg.com/564x/03/f5/30/03f530a91dfb4c3fb92324597830c67c.jpg" height="470px" width="410px" alt="projects image">
+<img align="right" src="https://i.pinimg.com/564x/03/f5/30/03f530a91dfb4c3fb92324597830c67c.jpg" height="450px" width="390px" alt="projects image">
 <table height="495px" width="365px">
   <tr>
     <td>
