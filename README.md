@@ -32,19 +32,12 @@
  ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
  ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
  ![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
- ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 </p>
 
+<p align="left">
+  💬 Contato:
 
-<h2 align="center">💬&ensp; <i>Ｃｏｎｔａｔｏ</i> &ensp;💬</h2>
-<img align="left" width="220px" height="180px" src="./images/who-are-you.gif" alt="anime coding">
-<br><br>
-<p align="center">
-  <a href = "mailto:joaosagrado3@outlook.com" alt="e-mail"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank">
-  </a> 
-  <a href="https://drack112.vercel.app/" alt="Portfólio" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139" alt="Portfólio">
-  </a> 
+  <a href = "mailto:joaosagrado3@outlook.com" alt="e-mail"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a> 
   <a href="https://www.linkedin.com/in/4bb732229/" alt="Linkedin" target="_blank">
     <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">
   </a>
@@ -55,6 +48,7 @@
    <img src = "https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">
   </a>
 </p>
+
 <br>
 
 ---
