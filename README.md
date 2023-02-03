@@ -24,21 +24,6 @@
 ![](https://img.shields.io/badge/Tools-Vercel-informational?style=flat&logo=vercel&logoColor=white&color=DA70D6)
 ![](https://img.shields.io/badge/Tools-CircleCI-informational?style=flat&logo=circleci&logoColor=white&color=DA70D6)
 
-<p align="left">
-  💬 Contato:
-
-  <a href = "mailto:joaosagrado3@outlook.com" alt="e-mail"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a> 
-  <a href="https://www.linkedin.com/in/4bb732229/" alt="Linkedin" target="_blank">
-    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">
-  </a>
-  <a href="https://wa.me/5511953763506?text=Sinta-se%20livre%20para%20entrar%20em%20contato%20comigo." alt="WhatsApp" target="_blank">
-    <img src = "https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
-  </a>
-  <a href="https://www.instagram.com/vitoralcantara122/" alt="Instagram" target="_blank">
-   <img src = "https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">
-  </a>
-</p>
-
 <br>
 
 ---
