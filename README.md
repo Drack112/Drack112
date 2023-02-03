@@ -1,7 +1,7 @@
 <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador iuriCode">
 
 <h4 align="left"> 
-  Eae! Meu nome é João Vitor e eu sou um desenvolvedor Backend que usa mil distros linux, bebe café mais do que bebe água, diz que odeia programação quando o código da errado mas fala que ama quando acerta, fanboy das IDE da Jetbrains e um adolescente que passa quase mil horas no PC (Minhas métricas não mentem). E também amante de Warframe.
+  Eae! Meu nome é João Vitor e eu sou um desenvolvedor Backend que usa mil distros linux, bebe café mais do que bebe água, diz que odeia programação quando o código da errado mas fala que ama quando acerta, fanboy das IDE da Jetbrains e geralmente passo quase mil horas no PC (Minhas métricas não mentem). E também amante de Warframe.
 </h4>
 
 ## 🔧 Technologies & Tools
