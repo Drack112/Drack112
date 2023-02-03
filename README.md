@@ -4,7 +4,7 @@
   Eae! Meu nome é João Vitor e eu sou um desenvolvedor Backend que usa mil distros linux, bebe café mais do que bebe água, diz que odeia programação quando o código da errado mas fala que ama quando acerta, fanboy das IDE da Jetbrains e geralmente passo quase mil horas no PC (Minhas métricas não mentem). E também amante de Warframe.
 </h4>
 
-## 🔧 Technologies & Tools
+## 🔧 Tecnologias e Ferramentas
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=DA70D6)
 ![](https://img.shields.io/badge/Editor-VsCode-informational?style=flat&logo=microsoft&logoColor=white&color=DA70D6)
 ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=DA70D6)
