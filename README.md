@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador iuriCode">
+<img src="https://i.redd.it/jh5vawrnglc11.jpg" min-width="400px" max-width="500px" width="500px" align="right" />
 
 <p align="left"> 
   Desenvolvedor Backend que usa mil distros linux, bebe café mais do que bebe água, diz que odeia programação quando o código da errado mas fala que ama quando acerta, fanboy das IDE da Jetbrains e um adolescente que passa quase mil horas no PC (Minhas métricas não mentem). E também amante de Warframe.
