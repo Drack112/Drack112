@@ -60,22 +60,5 @@ Backend Software Developer with experience in Golang, Node, JS and Python. Alway
 </p>
 
 
-
-<h2 align="center">
-  My Github Stats<img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50">
-</h2>
- 
-<br>
-
-<p align = "center">
-  <img  src = "https://github-readme-stats.vercel.app/api?username=drack112&show_icons=true&theme=radical&line_height=27">
-  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=drack112&hide=html,css,java,shaderlab,kotlin,hlsl&theme=radical">
-</p>
-
-<p align = "center">
- <img  src="https://github-readme-streak-stats.herokuapp.com/?user=drack112&show_icons=true&locale=en&layout=compact&theme=radical&line_height=0" />
-</p> 
-
 <hr>
-<p align="center">If you like it, do fork 🍴 and star ⭐</p>
 
