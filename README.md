@@ -1,19 +1,21 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3d2f8b77-1d2d-4c3c-9474-6fb6672aafeb" />
-</p>
-  
-<p align="center">
- 
- <img src="https://badges.pufler.dev/visits/drack112/drack112/"/> 
- <img src="https://badges.pufler.dev/years/drack112/"/>
- <img src="https://badges.pufler.dev/repos/drack112/"/>
- <img src="https://badges.pufler.dev/commits/monthly/drack112/" />
+  <br>
+  <samp>
+   Backend Software Developer with experience in Golang, Node, JS and Python. Always looking for the best version of myself and my projects. Focused on developing efficient and intuitive solutions for society. Currently working with health benefits system and hospital systems.<br>
+
+
+  <img src="https://raw.githubusercontent.com/TanZng/TanZng/master/assets/hollor_knight3.gif" width="200"/>
 
 </p>
 
-<p align="center">
-Backend Software Developer with experience in Golang, Node, JS and Python. Always looking for the best version of myself and my projects. Focused on developing efficient and intuitive solutions for society. Currently working with health benefits system and hospital systems.
-</p>
+
+<details align="center">
+
+<summary> <b> <samp> Light bonfire </samp></b></summary>
+<samp>
+ <b><h2 style="color: #fc6203">B O N F I R E &nbsp; L I T !</h2> </b>
+
+<img src="https://raw.githubusercontent.com/TanZng/TanZng/master/assets/bonefire.gif" width="200"/>
 
 <h2 align="center">Technology Stack <img src="https://github.com/user-attachments/assets/6a13cdc8-e390-44bb-a1e7-430348b43cd2" width="50"></h2>
 
@@ -43,22 +45,18 @@ Backend Software Developer with experience in Golang, Node, JS and Python. Alway
 </p>
 
 
+</samp>
+</details>
 
-<h2 align="center">Reach me out on <img src="https://media0.giphy.com/media/jqNPzdTTxQfOgOqpO4/source.gif" width="50"></h2>
 
 <p align="center">
- <a href = "mailto:joaosagrado3@outlook.com" alt="e-mail"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a> 
-  <a href="https://www.linkedin.com/in/4bb732229/" alt="Linkedin" target="_blank">
-    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">
-  </a>
-  <a href="https://wa.me/5511953763506?text=Sinta-se%20livre%20para%20entrar%20em%20contato%20comigo." alt="WhatsApp" target="_blank">
-    <img src = "https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
-  </a>
-  <a href="https://www.instagram.com/vitoralcantara122/" alt="Instagram" target="_blank">
-   <img src = "https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">
-  </a>
-</p>
+ 
+ <img src="https://badges.pufler.dev/visits/drack112/drack112/"/> 
+ <img src="https://badges.pufler.dev/years/drack112/"/>
+ <img src="https://badges.pufler.dev/repos/drack112/"/>
+ <img src="https://badges.pufler.dev/commits/monthly/drack112/" />
 
+</p>
 
 <hr>
 
