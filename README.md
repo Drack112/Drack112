@@ -1,7 +1,7 @@
 <p align="center">
   <br>
   <samp>
-   Backend Software Developer with experience in Golang, Node, JS and Python. Always looking for the best version of myself and my projects. Focused on developing efficient and intuitive solutions for society. Currently working with health benefits system and hospital systems.<br>
+   Backend software developer focused on Python, NodeJS and Golang, working with hexagonal architecture and integrative AI services.<br>
 
 
   <img src="https://raw.githubusercontent.com/TanZng/TanZng/master/assets/hollor_knight3.gif" width="200"/>
