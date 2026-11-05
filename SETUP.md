@@ -1,20 +1,37 @@
-# Luckyuro portrait
+# Profile README setup
 
-The portrait in `README.md` is static text committed to the repository; there
-is no GitHub Actions workflow. It sits between `<!-- LUCKYURO-START -->` and
-`<!-- LUCKYURO-END -->`, so it can be regenerated locally whenever the image
-in `assets/luckyuro.png` changes.
+## Random Luckyuro GIF
 
-The portrait is Unicode Braille art (2×4 dots per character), which keeps much
-more detail than plain ASCII at the same width. The converter removes the
-image background, draws the outlines and fills the darkest areas. Useful flags:
+`README.md` shows `https://drack112-readme.vercel.app/api/luckyuro`, which
+serves a random file from `assets/gifs/` on every request. The response is sent
+with `Cache-Control: no-cache`, so GitHub's image proxy fetches it again on each
+profile view instead of caching the first image.
 
-- `--width 72`: detail level (characters before trimming the empty margins)
-- `--dark 0.8`: lower it to fill more dark areas
-- `--edge 0.45`: lower it to draw more lines
-- `--aspect 0.42`: character cell proportion of GitHub's code font
+Deploy once:
 
-Regenerate:
+1. On [vercel.com/new](https://vercel.com/new), import the `Drack112/Drack112`
+   repository.
+2. Name the project `drack112-readme` (that gives the URL used in the README),
+   keep the framework preset as **Other** and deploy.
+3. Open `https://drack112-readme.vercel.app/api/luckyuro`: each reload should
+   show a different GIF.
+
+If the project gets another name, update the `src` of the GIF in `README.md`.
+To add or remove images, change the files in `assets/gifs/` (`.gif` or `.png`)
+and push; Vercel redeploys on its own.
+
+## Pixel-art assets
+
+`assets/web/` holds plain SVG files with no external dependencies: the animated
+header, the CRT monitor with the stack, the 88×31 buttons and the
+under-construction banner.
+
+## Braille portrait (currently not in the README)
+
+`scripts/image-to-ascii.py` turns `assets/luckyuro.png` into Braille art and
+`scripts/update-readme.py` writes it between `<!-- LUCKYURO-START -->` and
+`<!-- LUCKYURO-END -->` in `README.md`. To bring it back, add those two markers
+to the README and run:
 
 ```sh
 pip install pillow numpy
@@ -22,7 +39,3 @@ python3 scripts/image-to-ascii.py assets/luckyuro.png .agent-ascii-out/luckyuro.
 python3 scripts/update-readme.py
 rm -rf .agent-ascii-out
 ```
-
-The header (`assets/web/header.svg`), the 88×31 buttons and the
-under-construction banner in `assets/web/` are plain SVG files with no external
-dependencies.
