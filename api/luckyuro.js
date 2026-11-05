@@ -1,11 +1,12 @@
-// Serves a random Luckyuro GIF/PNG from assets/gifs on every request.
-// The no-cache headers make GitHub's image proxy (camo) fetch it again on each
-// README view instead of caching the first image it saw.
+// Serves a random Luckyuro clip, framed in a pixel-art TV (assets/tv, made by
+// scripts/frame-gifs.py), on every request. The no-cache headers make GitHub's
+// image proxy (camo) fetch it again on each README view instead of caching the
+// first image it saw.
 const fs = require("fs");
 const path = require("path");
 
-const DIR = path.join(process.cwd(), "assets", "gifs");
-const TYPES = { ".gif": "image/gif", ".png": "image/png" };
+const DIR = path.join(process.cwd(), "assets", "tv");
+const TYPES = { ".webp": "image/webp", ".gif": "image/gif", ".png": "image/png" };
 
 const files = fs.readdirSync(DIR).filter((f) => TYPES[path.extname(f)]);
 

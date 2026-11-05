@@ -3,19 +3,15 @@
 </p>
 
 <p align="center">
-  <img src="https://drack112-ten.vercel.app/api/luckyuro" alt="A random Luckyuro GIF" width="100%" />
+  <a href="https://drack112-ten.vercel.app/api/luckyuro"><img src="https://drack112-ten.vercel.app/api/luckyuro" alt="Luckyuro TV: click for another clip" height="220" /></a>
+  &nbsp;
+  <a href="https://www.last.fm/user/Drack112"><img src="https://drack112-ten.vercel.app/api/mp3" alt="LUCKY-MAN walkman: what Drack112 is listening to on Last.fm" height="220" /></a>
 </p>
 
 <br>
 
 <p align="center">
   <img src="assets/web/monitor.svg" alt="drack112@luckyuro ~ whoami: backend software developer (Python, NodeJS, Golang, hexagonal architecture, integrative AI services); stack --all" width="100%" />
-</p>
-
-<br>
-
-<p align="center">
-  <a href="https://www.last.fm/user/Drack112"><img src="https://drack112-ten.vercel.app/api/mp3" alt="LUCKY-MP3: what Drack112 is listening to on Last.fm" width="100%" /></a>
 </p>
 
 <br>

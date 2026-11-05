@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/luckyuro.js": {
-      "includeFiles": "assets/gifs/**"
+      "includeFiles": "assets/tv/**"
     }
   }
 }

@@ -1,27 +1,35 @@
 # Profile README setup
 
-## Random Luckyuro GIF
+## Random Luckyuro TV
 
 `README.md` shows `https://drack112-ten.vercel.app/api/luckyuro`, which
-serves a random file from `assets/gifs/` on every request. The response is sent
-with `Cache-Control: no-cache`, so GitHub's image proxy fetches it again on each
+serves a random clip framed in a small pixel-art TV from `assets/tv/` on every
+request (clicking it opens another one). The response is sent with
+`Cache-Control: no-cache`, so GitHub's image proxy fetches it again on each
 profile view instead of caching the first image.
 
 The Vercel project imports the `Drack112/Drack112` repository (framework
 preset **Other**) and is served at `drack112-ten.vercel.app`. Opening
 `https://drack112-ten.vercel.app/api/luckyuro` and reloading should show a
-different GIF each time.
+different clip each time.
 
-If the domain changes, update the `src` of the GIF and of the MP3 player in
+If the domain changes, update the `src` of the TV and of the walkman in
 `README.md`.
-To add or remove images, change the files in `assets/gifs/` (`.gif` or `.png`)
-and push; Vercel redeploys on its own.
 
-## LUCKY-MP3 player (Last.fm)
+The source clips live in `assets/gifs/` (`.gif` or `.png`). After adding or
+removing one, rebuild the framed versions and push:
 
-`README.md` shows `https://drack112-ten.vercel.app/api/mp3`, an SVG MP3
-player drawn by `api/mp3.js` with the track playing now and the last five
-scrobbles from Last.fm. It runs on the same Vercel project as the random GIF.
+```sh
+pip install pillow
+python3 scripts/frame-gifs.py
+```
+
+## LUCKY-MAN walkman (Last.fm)
+
+`README.md` shows `https://drack112-ten.vercel.app/api/mp3`, a cassette
+walkman drawn by `api/mp3.js` with the track playing now on the tape label and
+the last five scrobbles on the J-card. It runs on the same Vercel project as
+the TV.
 
 1. Create a free API key at [last.fm/api/account/create](https://www.last.fm/api/account/create)
    (only the "API key" is needed, not the secret).
@@ -30,7 +38,7 @@ scrobbles from Last.fm. It runs on the same Vercel project as the random GIF.
 3. Redeploy, then open `https://drack112-ten.vercel.app/api/mp3`.
 
 To fill it, make Spotify / YouTube Music / your player scrobble to Last.fm.
-Without the key or without scrobbles the player shows "INSERT COOKIE TO PLAY...".
+Without the key or without scrobbles the walkman shows a blank tape ("insert cookie...").
 
 ## Pixel-art assets
 
