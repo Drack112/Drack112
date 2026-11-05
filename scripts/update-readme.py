@@ -7,51 +7,46 @@ OUTPUT_DIR = Path(".agent-ascii-out")
 START = "<!-- LUCKYURO-START -->"
 END = "<!-- LUCKYURO-END -->"
 
-readme = README.read_text(encoding="utf-8")
-
-# Search recursively instead of only checking the root directory.
 ascii_files = sorted(OUTPUT_DIR.rglob("*.txt"))
 
 if not ascii_files:
-    generated_files = (
-        [str(path) for path in OUTPUT_DIR.rglob("*") if path.is_file()]
-        if OUTPUT_DIR.exists()
-        else []
-    )
-
     raise RuntimeError(
-        "No ASCII .txt file was generated.\n"
-        f"Output directory: {OUTPUT_DIR.resolve()}\n"
-        f"Existing files: {generated_files}"
+        f"No ASCII output found in {OUTPUT_DIR.resolve()}"
     )
 
-if START not in readme or END not in readme:
-    raise RuntimeError("Luckyuro markers not found in README.md")
-
-start_index = readme.index(START) + len(START)
-end_index = readme.index(END)
-
-if start_index >= end_index:
-    raise RuntimeError("Invalid Luckyuro marker order")
+if len(ascii_files) > 1:
+    print(f"Multiple outputs found: {ascii_files}")
 
 ascii_art = ascii_files[0].read_text(
     encoding="utf-8"
 ).rstrip()
 
-replacement = f"""
+if not ascii_art:
+    raise RuntimeError("Generated ASCII file is empty")
 
-```text
-{ascii_art}
-```
+readme = README.read_text(encoding="utf-8")
 
-"""
+if START not in readme or END not in readme:
+    raise RuntimeError("Luckyuro README markers are missing")
 
-updated_readme = (
+start_index = readme.index(START) + len(START)
+end_index = readme.index(END)
+
+if start_index >= end_index:
+    raise RuntimeError("Invalid README marker positions")
+
+replacement = (
+    "\n\n```text\n"
+    + ascii_art
+    + "\n```\n\n"
+)
+
+updated = (
     readme[:start_index]
     + replacement
     + readme[end_index:]
 )
 
-README.write_text(updated_readme, encoding="utf-8")
+README.write_text(updated, encoding="utf-8")
 
-print(f"README updated using: {ascii_files[0]}")
+print(f"Luckyuro ASCII updated from {ascii_files[0]}")
