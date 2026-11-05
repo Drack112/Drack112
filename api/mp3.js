@@ -69,6 +69,44 @@ async function getTracks() {
   }
 }
 
+// track length in seconds from Last.fm (0 when it doesn't know)
+async function duration(t) {
+  const key = process.env.LASTFM_API_KEY;
+  if (!key || !t) return 0;
+  const url = `${API}?method=track.getInfo&artist=${encodeURIComponent(t.artist)}&track=${encodeURIComponent(t.name)}&api_key=${key}&format=json`;
+  try {
+    const r = await fetch(url, { signal: AbortSignal.timeout(3000) });
+    const j = await r.json();
+    return Math.round(Number((j.track && j.track.duration) || 0) / 1000);
+  } catch {
+    return 0;
+  }
+}
+
+// Where the tape is: { elapsed, length } in seconds. Last.fm stamps a scrobble
+// with the time the track *started*, so the song playing now most likely began
+// when the previous one ended (its start + its length). If that guess doesn't
+// fit, fall back to 0:00.
+async function timing(tracks) {
+  const now = tracks[0];
+  if (!now) return { elapsed: 0, length: 0 };
+  if (!now.nowPlaying) {
+    const length = await duration(now);
+    return { elapsed: length, length };
+  }
+  const prev = tracks[1];
+  const [length, prevLength] = await Promise.all([duration(now), duration(prev)]);
+  let elapsed = 0;
+  if (prev && prev.uts && prevLength) {
+    const guess = Date.now() / 1000 - (Number(prev.uts) + prevLength);
+    if (guess >= 0 && guess <= (length || 600) + 30) elapsed = guess;
+  }
+  if (length) elapsed = Math.min(elapsed, length);
+  return { elapsed: Math.floor(elapsed), length };
+}
+
+const mmss = (s) => `${String(Math.floor(s / 60) % 100).padStart(2, "0")}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+
 async function cover(url) {
   if (!url || url.includes(PLACEHOLDER)) return null;
   try {
@@ -92,23 +130,28 @@ const text = (x, y, s, size, fill, extra = "", font = MONO) =>
   `<text x="${x}" y="${y}" font-family="${font}" font-size="${size}" font-weight="700" fill="${fill}"${extra}>${esc(s)}</text>`;
 const hand = (x, y, s, size, fill, extra = "") => text(x, y, s, size, fill, extra, HAND);
 
-// one cassette reel: tape pack, hub and six teeth that spin while playing
-function reel(cx, cy, pack, spinning) {
+// One cassette reel: tape pack, hub and six teeth that spin while playing.
+// `remaining` > 0 grows/shrinks the pack to `packEnd` and stops the spin when the track ends.
+function reel(cx, cy, pack, spinning, packEnd, remaining) {
   const teeth = [0, 60, 120, 180, 240, 300].map((a) =>
     `<rect x="${cx - 1.5}" y="${cy - 10}" width="3" height="4" fill="${C.cream}" transform="rotate(${a} ${cx} ${cy})"/>`).join("");
+  const until = remaining ? ` end="${remaining}s" fill="freeze"` : "";
   const spin = spinning
-    ? `<animateTransform attributeName="transform" type="rotate" values="${[0, 45, 90, 135, 180, 225, 270, 315].map((a) => `${a} ${cx} ${cy}`).join(";")}" dur="0.8s" calcMode="discrete" repeatCount="indefinite"/>`
+    ? `<animateTransform attributeName="transform" type="rotate" values="${[0, 45, 90, 135, 180, 225, 270, 315].map((a) => `${a} ${cx} ${cy}`).join(";")}" dur="0.8s" calcMode="discrete" repeatCount="indefinite"${until}/>`
     : "";
-  return `<circle cx="${cx}" cy="${cy}" r="${pack}" fill="${C.tape}"/>` +
+  const wind = remaining ? `<animate attributeName="r" from="${pack.toFixed(1)}" to="${packEnd}" dur="${remaining}s" fill="freeze"/>` : "";
+  return `<circle cx="${cx}" cy="${cy}" r="${pack.toFixed(1)}" fill="${C.tape}">${wind}</circle>` +
     `<circle cx="${cx}" cy="${cy}" r="13" fill="${C.cream}" stroke="${C.ink}" stroke-width="2"/>` +
     `<circle cx="${cx}" cy="${cy}" r="8" fill="${C.ink}"/>` +
     `<g>${teeth}${spin}</g>`;
 }
 
-function render(tracks, art) {
+function render(tracks, art, t = { elapsed: 0, length: 0 }) {
   const W = 640, H = 300;
   const now = tracks[0];
   const playing = Boolean(now && now.nowPlaying);
+  // seconds left on this side of the tape; 0 when unknown or stopped
+  const remaining = playing && t.length ? Math.max(1, t.length - t.elapsed) : 0;
   const o = [];
 
   // transport keys on top of the walkman; the pressed one shows the state
@@ -174,7 +217,10 @@ function render(tracks, art) {
   // tape window with the two reels
   o.push(`<rect x="104" y="158" width="216" height="50" fill="#140E0B"/>`);
   o.push(`<clipPath id="win"><rect x="104" y="158" width="216" height="50"/></clipPath>`);
-  o.push(`<g clip-path="url(#win)" shape-rendering="auto">${reel(150, 183, 30, playing)}${reel(274, 183, 21, playing)}` +
+  // tape moves from the left reel to the right one as the track plays
+  const progress = t.length ? Math.min(1, t.elapsed / t.length) : 0.4;
+  const left = 32 - 14 * progress, right = 18 + 14 * progress;
+  o.push(`<g clip-path="url(#win)" shape-rendering="auto">${reel(150, 183, left, playing, 18, remaining)}${reel(274, 183, right, playing, 32, remaining)}` +
     `<rect x="104" y="158" width="216" height="12" fill="#FFF" opacity="0.06"/></g>`);
   o.push(`<rect x="104" y="158" width="216" height="50" fill="none" stroke="${C.ink}" stroke-width="3"/>`);
   // bottom ramp of the shell
@@ -187,26 +233,40 @@ function render(tracks, art) {
   // orange stripe
   o.push(`<rect x="16" y="242" width="392" height="6" fill="${C.orange}"/>`);
 
-  // tape counter (last digit rolls while playing)
-  o.push(`<rect x="34" y="256" width="78" height="26" fill="${C.ink}"/>`);
-  const count = now && now.uts ? String(Math.min(999, Math.round((Date.now() / 1000 - now.uts) / 60))).padStart(3, "0") : "000";
-  [0, 1].forEach((k) => {
-    o.push(`<rect x="${38 + k * 24}" y="259" width="20" height="20" fill="${C.cream}"/>` + text(43 + k * 24, 275, count[k], 16, C.ink));
+  // mm:ss tape counter. While playing each digit is a rolling strip whose
+  // animation starts in the past (negative begin), so it opens on the real
+  // elapsed time and keeps ticking every second until the track ends.
+  const DH = 22;  // digit box height
+  o.push(`<rect x="30" y="253" width="104" height="30" fill="${C.ink}"/>`);
+  const digits = [  // [box x, symbols, seconds per step, current value]
+    [35, 10, 600, Math.floor(t.elapsed / 600) % 10],
+    [55, 10, 60, Math.floor(t.elapsed / 60) % 10],
+    [83, 6, 10, Math.floor((t.elapsed % 60) / 10)],
+    [103, 10, 1, t.elapsed % 10],
+  ];
+  digits.forEach(([x, base, step, value], k) => {
+    o.push(`<rect x="${x}" y="257" width="18" height="${DH}" fill="${C.cream}"/>`);
+    if (!playing) {
+      o.push(text(x + 9, 274, t.length || !now ? String(value) : "-", 16, C.ink, ' text-anchor="middle"'));
+      return;
+    }
+    o.push(`<clipPath id="d${k}"><rect x="${x}" y="257" width="18" height="${DH}"/></clipPath>`);
+    const strip = Array.from({ length: base }, (_, d) => text(x + 9, 274 + d * DH, String(d), 16, C.ink, ' text-anchor="middle"')).join("");
+    const vals = Array.from({ length: base }, (_, d) => `0 ${-d * DH}`).join(";");
+    const offset = t.elapsed % (base * step);
+    o.push(`<g clip-path="url(#d${k})"><g>${strip}<animateTransform attributeName="transform" type="translate" values="${vals}" ` +
+      `dur="${base * step}s" begin="-${offset}s" calcMode="discrete" repeatCount="indefinite"` +
+      `${remaining ? ` end="${remaining}s" fill="freeze"` : ""}/></g></g>`);
   });
-  o.push(`<rect x="86" y="259" width="20" height="20" fill="${C.cream}"/>`);
-  o.push(`<clipPath id="cnt"><rect x="86" y="259" width="20" height="20"/></clipPath>`);
-  if (playing) {
-    const strip = Array.from({ length: 11 }, (_, d) => text(91, 275 + d * 20, String(d % 10), 16, C.ink)).join("");
-    const vals = Array.from({ length: 10 }, (_, d) => `0 ${-d * 20}`).join(";");
-    o.push(`<g clip-path="url(#cnt)"><g>${strip}<animateTransform attributeName="transform" type="translate" values="${vals}" dur="10s" calcMode="discrete" repeatCount="indefinite"/></g></g>`);
-  } else {
-    o.push(text(91, 275, count[2], 16, C.ink));
-  }
+  // colon, blinking while the tape runs
+  o.push(`<g fill="${C.cream}"><rect x="76" y="262" width="4" height="4"/><rect x="76" y="271" width="4" height="4"/>` +
+    (playing ? `<animate attributeName="opacity" values="1;0.2" dur="1s" calcMode="discrete" repeatCount="indefinite"${remaining ? ` end="${remaining}s" fill="freeze"` : ""}/>` : "") + "</g>");
+  o.push(text(140, 274, `/${t.length ? mmss(t.length) : "--:--"}`, 12, C.cream));
   // play LED
-  o.push(`<circle cx="130" cy="269" r="6" fill="${C.ink}" shape-rendering="auto"/>` +
-    `<circle cx="130" cy="269" r="4" fill="${playing ? C.orange : "#4A3A2A"}" shape-rendering="auto">` +
-    (playing ? '<animate attributeName="opacity" values="1;0.35" dur="0.7s" calcMode="discrete" repeatCount="indefinite"/>' : "") + "</circle>");
-  o.push(text(142, 273, playing ? "PLAY" : "STOP", 11, C.cream, ' letter-spacing="2"'));
+  o.push(`<circle cx="208" cy="268" r="6" fill="${C.ink}" shape-rendering="auto"/>` +
+    `<circle cx="208" cy="268" r="4" fill="${playing ? C.orange : "#4A3A2A"}" shape-rendering="auto">` +
+    (playing ? `<animate attributeName="opacity" values="1;0.35" dur="0.7s" calcMode="discrete" repeatCount="indefinite"${remaining ? ` end="${remaining}s" fill="freeze"` : ""}/>` : "") + "</circle>");
+  o.push(text(219, 272, playing ? "PLAY" : "STOP", 10, C.cream, ' letter-spacing="1"'));
   // brand
   o.push(text(400, 270, "LUCKY-MAN", 20, C.cream, ' text-anchor="end" letter-spacing="3"'));
   o.push(text(400, 284, "AUTO REVERSE · MEGA BASS", 9, C.orange, ' text-anchor="end" letter-spacing="1"'));
@@ -247,11 +307,12 @@ function render(tracks, art) {
 
 module.exports = async (req, res) => {
   const { tracks } = await getTracks();
-  const art = tracks[0] ? await cover(tracks[0].image) : null;
+  const [art, t] = await Promise.all([tracks[0] ? cover(tracks[0].image) : null, timing(tracks)]);
   res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
-  // camo / browsers must refetch; Vercel's edge may reuse it for 30s
+  // camo / browsers must refetch; Vercel's edge may reuse it for a few seconds,
+  // short enough that the tape counter stays close to the real position
   res.setHeader("Cache-Control", "no-cache, no-store, max-age=0, must-revalidate");
-  res.setHeader("Vercel-CDN-Cache-Control", "max-age=30");
-  res.end(render(tracks, art));
+  res.setHeader("Vercel-CDN-Cache-Control", "max-age=5");
+  res.end(render(tracks, art, t));
 };
 module.exports.render = render;

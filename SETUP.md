@@ -31,6 +31,13 @@ walkman drawn by `api/mp3.js` with the track playing now on the tape label and
 the last five scrobbles on the J-card. It runs on the same Vercel project as
 the TV.
 
+The mm:ss tape counter starts at the estimated position of the current track
+and ticks in the browser until the track ends; the length comes from Last.fm's
+`track.getInfo`. Last.fm doesn't report when a "now playing" track started, so
+the start is taken as the end of the previous scrobble (its start + its
+length). When that doesn't fit (a pause between songs, unknown length) the
+counter starts at 00:00.
+
 1. Create a free API key at [last.fm/api/account/create](https://www.last.fm/api/account/create)
    (only the "API key" is needed, not the secret).
 2. In the Vercel project, open **Settings → Environment Variables** and add
