@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Convert Luckyuro image to ASCII
-        uses: Vinniai/agent-ascii@v1
+        uses: Vinniai/agent-ascii@main
         with:
           paths: assets/luckyuro.png
           flags: --width 72 --complex --grayscale
