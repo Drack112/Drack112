@@ -3,40 +3,13 @@
 </p>
 
 <p align="center">
-  <img src="https://drack112-readme.vercel.app/api/luckyuro" alt="A random Luckyuro GIF" width="100%" />
+  <img src="https://drack112-ten.vercel.app/api/luckyuro" alt="A random Luckyuro GIF" width="100%" />
 </p>
 
 <br>
 
 <p align="center">
-  <img src="assets/web/monitor.svg" alt="C:\> WHOAMI: Drack112, backend software developer (Python, NodeJS, Golang, hexagonal architecture, integrative AI services). C:\> STACK.EXE /ALL" width="100%" />
-</p>
-
-<br>
-
-<h3 align="center"><samp>💾 A:\PROJECTS&gt; DIR</samp></h3>
-
-<p align="center">
-  💾 <a href="https://github.com/Drack112/Golang-SimpleBank"><b>Golang-SimpleBank</b></a> <samp>★7</samp><br>
-  <sub><samp>Bank API master class with DDD &amp; TDD — Go · Gin · gRPC · PostgreSQL · Redis · Traefik · CI/CD</samp></sub><br><br>
-  💾 <a href="https://github.com/Drack112/Go-Wallpaper"><b>Go-Wallpaper</b></a> <samp>★20</samp><br>
-  <sub><samp>Wallpaper scraper — Go · Colly</samp></sub><br><br>
-  💾 <a href="https://github.com/Drack112/All-In-One-Music-Graphql"><b>All-In-One-Music-Graphql</b></a><br>
-  <sub><samp>YTMusic, SoundCloud, Last.fm &amp; lyrics in one place — Next.js · GraphQL · Drizzle · Turso · Redis</samp></sub><br><br>
-  💾 <a href="https://github.com/Drack112/Vintage-TUI-Radio"><b>Vintage-TUI-Radio</b></a><br>
-  <sub><samp>Terminal radio streaming via ffmpeg — Go · Bubble Tea</samp></sub><br><br>
-  💾 <a href="https://github.com/Drack112/Twitter-Spring-React"><b>Twitter-Spring-React</b></a><br>
-  <sub><samp>Twitter-like microservices — Spring Boot · Eureka · Kafka · RabbitMQ · Prometheus · Grafana · Zipkin</samp></sub><br><br>
-  💾 <a href="https://github.com/Drack112/Track-API"><b>Track-API</b></a><br>
-  <sub><samp>Tracking API with full observability — Go · OpenTelemetry · Prometheus · Grafana · Zipkin</samp></sub><br><br>
-  💾 <a href="https://github.com/Drack112/Car-Check-gRPC"><b>Car-Check-gRPC</b></a><br>
-  <sub><samp>Car rental built on gRPC microservices — NestJS · gRPC · MongoDB</samp></sub><br><br>
-  💾 <a href="https://github.com/Drack112/Namu-Api-Python"><b>Namu-Api-Python</b></a><br>
-  <sub><samp>API with LLM integrations — FastAPI · SQLAlchemy · Anthropic · Ollama</samp></sub><br><br>
-  💾 <a href="https://github.com/Drack112/Google-Docs-Flutter"><b>Google-Docs-Flutter</b></a> <samp>★5</samp><br>
-  <sub><samp>Google Docs remake — Flutter · Socket.io · MongoDB</samp></sub><br><br>
-  💾 <a href="https://github.com/Drack112/Discord-App-Next"><b>Discord-App-Next</b></a><br>
-  <sub><samp>Discord clone: API, websocket &amp; WebRTC in one app — Next.js · LiveKit · Prisma · Clerk</samp></sub>
+  <img src="assets/web/monitor.svg" alt="drack112@luckyuro ~ whoami: backend software developer (Python, NodeJS, Golang, hexagonal architecture, integrative AI services); stack --all" width="100%" />
 </p>
 
 <br>
@@ -46,14 +19,19 @@
 <p align="center">
   <a href="https://drack112.vercel.app/"><img src="assets/web/my-homepage.svg" alt="My homepage" /></a>
   <img src="assets/web/luckyuro-approved.svg" alt="Luckyuro approved" />
-  <img src="assets/web/python-powered.svg" alt="Python powered" />
-  <img src="assets/web/golang-inside.svg" alt="Golang inside" />
-  <img src="assets/web/nodejs-now.svg" alt="Node.js now!" />
-  <br>
-  <img src="assets/web/hexagonal-arch.svg" alt="Hexagonal architecture" />
-  <img src="assets/web/arch-linux.svg" alt="Arch Linux user" />
+  <img src="assets/web/spy-of-smiles.svg" alt="Spy of smiles" />
   <img src="assets/web/cookies-accepted.svg" alt="Cookies accepted" />
-  <img src="assets/web/best-viewed.svg" alt="Best viewed at 800x600" />
+  <img src="assets/web/bells-on.svg" alt="Jingle bells on" />
+  <img src="assets/web/stitched-with-love.svg" alt="Stitched with love" />
+  <br>
+  <a href="https://github.com/Drack112/Go-Wallpaper"><img src="assets/web/repo-go-wallpaper.svg" alt="Go-Wallpaper" /></a>
+  <a href="https://github.com/Drack112/Golang-SimpleBank"><img src="assets/web/repo-simplebank.svg" alt="Golang-SimpleBank" /></a>
+  <a href="https://github.com/Drack112/Vintage-TUI-Radio"><img src="assets/web/repo-tui-radio.svg" alt="Vintage-TUI-Radio" /></a>
+  <a href="https://github.com/Drack112/All-In-One-Music-Graphql"><img src="assets/web/repo-music-graphql.svg" alt="All-In-One-Music-Graphql" /></a>
+  <a href="https://github.com/Drack112/Twitter-Spring-React"><img src="assets/web/repo-twitter-spring.svg" alt="Twitter-Spring-React" /></a>
+  <a href="https://github.com/Drack112/Google-Docs-Flutter"><img src="assets/web/repo-docs-flutter.svg" alt="Google-Docs-Flutter" /></a>
+  <a href="https://github.com/Drack112/Car-Check-gRPC"><img src="assets/web/repo-car-check.svg" alt="Car-Check-gRPC" /></a>
+  <a href="https://github.com/Drack112/Track-API"><img src="assets/web/repo-track-api.svg" alt="Track-API" /></a>
 </p>
 
 <p align="center">

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="31" viewBox="0 0 88 31" shape-rendering="crispEdges">
+  <rect width="88" height="31" fill="#111"/>
+  <rect x="1" y="1" width="86" height="29" fill="#2B1A2A"/>
+  <path d="M1 1h86v1H2v28H1z" fill="#FFF" opacity="0.55"/>
+  <path d="M87 1v29H1v-1h85V1z" fill="#000" opacity="0.45"/>
+  <rect x="3" y="3" width="25" height="25" fill="#4B2E4A"/>
+  <path d="M3 27h25v1H3zM27 3h1v25h-1z" fill="#000" opacity="0.35"/>
+  <g shape-rendering="auto"><path d="M15.5 6.5c-3.8 0-5.8 3-5.8 6.8v3.7l-2.2 3h16l-2.2-3v-3.7c0-3.8-2-6.8-5.8-6.8z" fill="#E9D46A" stroke="#6A5410"/><path d="M11.5 11.5q1-2.5 3-3" stroke="#FFF8D0" stroke-width="1.2" fill="none"/><circle cx="15.5" cy="22.3" r="2" fill="#B89A2E" stroke="#6A5410" stroke-width="0.8"/></g>
+  <g shape-rendering="auto">
+    <text x="57" y="13" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#E9D46A">JINGLE</text>
+    <text x="57" y="24" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#E9D46A">BELLS ON</text>
+  </g>
+</svg>

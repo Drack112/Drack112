@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="31" viewBox="0 0 88 31" shape-rendering="crispEdges">
+  <rect width="88" height="31" fill="#111"/>
+  <rect x="1" y="1" width="86" height="29" fill="#1E3328"/>
+  <path d="M1 1h86v1H2v28H1z" fill="#FFF" opacity="0.55"/>
+  <path d="M87 1v29H1v-1h85V1z" fill="#000" opacity="0.45"/>
+  <rect x="3" y="3" width="25" height="25" fill="#2E4A3A"/>
+  <path d="M3 27h25v1H3zM27 3h1v25h-1z" fill="#000" opacity="0.35"/>
+  <g shape-rendering="auto"><circle cx="15.5" cy="15.5" r="9" fill="#E9D46A" stroke="#8A6A1E"/><circle cx="12.3" cy="13.2" r="2.2" fill="#8CC84B" stroke="#1E3328" stroke-width="0.8"/><circle cx="18.7" cy="13.2" r="2.2" fill="#8CC84B" stroke="#1E3328" stroke-width="0.8"/><path d="M11 18Q15.5 22.5 20 18" fill="none" stroke="#1E3328" stroke-width="1.6"/></g>
+  <g shape-rendering="auto">
+    <text x="57" y="13" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#E9D46A">SPY OF</text>
+    <text x="57" y="24" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#E9D46A">SMILES</text>
+  </g>
+</svg>

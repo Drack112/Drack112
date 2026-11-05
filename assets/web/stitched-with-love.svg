@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="31" viewBox="0 0 88 31" shape-rendering="crispEdges">
+  <rect width="88" height="31" fill="#111"/>
+  <rect x="1" y="1" width="86" height="29" fill="#2E4A3A"/>
+  <path d="M1 1h86v1H2v28H1z" fill="#FFF" opacity="0.55"/>
+  <path d="M87 1v29H1v-1h85V1z" fill="#000" opacity="0.45"/>
+  <rect x="3" y="3" width="25" height="25" fill="#6B8F3E"/>
+  <path d="M3 27h25v1H3zM27 3h1v25h-1z" fill="#000" opacity="0.35"/>
+  <g shape-rendering="auto"><rect x="9" y="7" width="13" height="3" fill="#8A5A2B"/><rect x="10.5" y="10" width="10" height="11" fill="#E8862E"/><path d="M10.5 12.5h10M10.5 15h10M10.5 17.5h10" stroke="#C8641E" stroke-width="0.8"/><rect x="9" y="21" width="13" height="3" fill="#8A5A2B"/><path d="M6 25L25 6" stroke="#E0E0E0" stroke-width="1.4"/><circle cx="24" cy="7" r="1.2" fill="none" stroke="#E0E0E0" stroke-width="0.8"/></g>
+  <g shape-rendering="auto">
+    <text x="57" y="13" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#F3EBD3">STITCHED</text>
+    <text x="57" y="24" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#F3EBD3">WITH LOVE</text>
+  </g>
+</svg>
