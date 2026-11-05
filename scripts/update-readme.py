@@ -1,3 +1,4 @@
+
 from pathlib import Path
 
 README = Path("README.md")
@@ -8,28 +9,49 @@ END = "<!-- LUCKYURO-END -->"
 
 readme = README.read_text(encoding="utf-8")
 
-ascii_files = sorted(OUTPUT_DIR.glob("*.txt"))
-if len(ascii_files) != 1:
-    raise RuntimeError(
-        f"Expected exactly one ASCII .txt file in {OUTPUT_DIR}, "
-        f"found {len(ascii_files)}"
+# Search recursively instead of only checking the root directory.
+ascii_files = sorted(OUTPUT_DIR.rglob("*.txt"))
+
+if not ascii_files:
+    generated_files = (
+        [str(path) for path in OUTPUT_DIR.rglob("*") if path.is_file()]
+        if OUTPUT_DIR.exists()
+        else []
     )
 
-ascii_art = ascii_files[0].read_text(encoding="utf-8").rstrip()
+    raise RuntimeError(
+        "No ASCII .txt file was generated.\n"
+        f"Output directory: {OUTPUT_DIR.resolve()}\n"
+        f"Existing files: {generated_files}"
+    )
 
 if START not in readme or END not in readme:
-    raise RuntimeError(
-        f"README.md must contain {START} and {END} on separate lines"
-    )
+    raise RuntimeError("Luckyuro markers not found in README.md")
 
 start_index = readme.index(START) + len(START)
 end_index = readme.index(END)
 
 if start_index >= end_index:
-    raise RuntimeError("Invalid Luckyuro marker order in README.md")
+    raise RuntimeError("Invalid Luckyuro marker order")
 
-replacement = f"\n\n```text\n{ascii_art}\n```\n\n"
-updated_readme = readme[:start_index] + replacement + readme[end_index:]
+ascii_art = ascii_files[0].read_text(
+    encoding="utf-8"
+).rstrip()
+
+replacement = f"""
+
+```text
+{ascii_art}
+```
+
+"""
+
+updated_readme = (
+    readme[:start_index]
+    + replacement
+    + readme[end_index:]
+)
 
 README.write_text(updated_readme, encoding="utf-8")
-print(f"README updated using {ascii_files[0]}")
+
+print(f"README updated using: {ascii_files[0]}")
