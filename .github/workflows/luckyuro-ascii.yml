@@ -26,7 +26,7 @@ jobs:
         uses: Vinniai/agent-ascii@main
         with:
           paths: assets/luckyuro.png
-          source: local
+          source: npm
           save-txt: true
           save-img: false
           output-dir: .agent-ascii-out
@@ -37,11 +37,12 @@ jobs:
         env:
           RENDERED_COUNT: ${{ steps.ascii.outputs.rendered_count }}
         run: |
+          set -euo pipefail
+
           echo "Rendered: $RENDERED_COUNT"
-          echo "Generated files:"
           find .agent-ascii-out -type f -print
 
-          if [ "$RENDERED_COUNT" -lt 1 ]; then
+          if [ "${RENDERED_COUNT:-0}" -lt 1 ]; then
             echo "::error::No image was rendered"
             exit 1
           fi
