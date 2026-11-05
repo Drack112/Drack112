@@ -9,6 +9,7 @@ on:
       - "assets/luckyuro.png"
       - ".github/workflows/luckyuro-ascii.yml"
       - "scripts/update-readme.py"
+      - "scripts/image-to-ascii.py"
 
 permissions:
   contents: write
@@ -21,36 +22,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Convert Luckyuro image to ASCII
-        id: ascii
-        uses: Vinniai/agent-ascii@main
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          paths: assets/luckyuro.png
-          source: npm
-          save-txt: true
-          save-img: false
-          output-dir: .agent-ascii-out
-          flags: --width 72 --complex --save-txt-history=false
-          fail-on-error: true
+          python-version: "3.12"
 
-      - name: Verify generated ASCII
-        env:
-          RENDERED_COUNT: ${{ steps.ascii.outputs.rendered_count }}
+      - name: Convert Luckyuro image to Braille art
         run: |
-          set -euo pipefail
-
-          echo "Rendered: $RENDERED_COUNT"
-          find .agent-ascii-out -type f -print
-
-          if [ "${RENDERED_COUNT:-0}" -lt 1 ]; then
-            echo "::error::No image was rendered"
-            exit 1
-          fi
-
-          if ! find .agent-ascii-out -type f -name "*.txt" | grep -q .; then
-            echo "::error::No ASCII text file was generated"
-            exit 1
-          fi
+          pip install pillow numpy
+          python3 scripts/image-to-ascii.py assets/luckyuro.png .agent-ascii-out/luckyuro.txt --width 72
 
       - name: Update README
         run: python3 scripts/update-readme.py
