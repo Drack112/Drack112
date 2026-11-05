@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="468" height="44" viewBox="0 0 468 44">
+  <defs>
+    <pattern id="stripes" width="24" height="44" patternUnits="userSpaceOnUse">
+      <rect width="24" height="44" fill="#F2C230"/>
+      <path d="M0 44L12 0H24L12 44Z" fill="#1A1A1A"/>
+      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="24 0" dur="1s" repeatCount="indefinite"/>
+    </pattern>
+  </defs>
+  <rect width="468" height="44" fill="url(#stripes)"/>
+  <rect x="84" y="9" width="300" height="26" fill="#1E3328" stroke="#E8862E" stroke-width="2"/>
+  <text x="234" y="27" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#F3EBD3" letter-spacing="2">
+    UNDER CONSTRUCTION
+    <animate attributeName="fill" values="#F3EBD3;#E8862E;#F3EBD3" dur="1.2s" repeatCount="indefinite"/>
+  </text>
+</svg>

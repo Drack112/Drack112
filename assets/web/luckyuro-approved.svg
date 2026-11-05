@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="31" viewBox="0 0 88 31" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="argyle" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#6B8F3E"/>
+      <path d="M6 0L12 6L6 12L0 6Z" fill="#E8862E"/>
+      <path d="M0 0L12 12M12 0L0 12" stroke="#F3EBD3" stroke-width="0.6" opacity="0.7"/>
+    </pattern>
+  </defs>
+  <rect width="88" height="31" fill="#111"/>
+  <rect x="1" y="1" width="86" height="29" fill="#2E4A3A"/>
+  <path d="M1 1h86v1H2v28H1z" fill="#FFF" opacity="0.55"/>
+  <path d="M87 1v29H1v-1h85V1z" fill="#000" opacity="0.45"/>
+  <rect x="3" y="3" width="25" height="25" fill="url(#argyle)"/>
+  <path d="M3 27h25v1H3zM27 3h1v25h-1z" fill="#000" opacity="0.35"/>
+  <text x="15.5" y="21.8" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" shape-rendering="auto">✿</text>
+  <g shape-rendering="auto">
+    <text x="57" y="13" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#E8862E">LUCKYURO</text>
+    <text x="57" y="24" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#E8862E">APPROVED</text>
+  </g>
+</svg>

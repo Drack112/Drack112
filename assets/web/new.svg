@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="14" viewBox="0 0 34 14">
+  <rect width="34" height="14" rx="2" fill="#E8862E"/>
+  <text x="17" y="10.5" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#FFF">NEW!
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="0.9s" repeatCount="indefinite"/>
+  </text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="31" viewBox="0 0 88 31" shape-rendering="crispEdges">
+  <rect width="88" height="31" fill="#111"/>
+  <rect x="1" y="1" width="86" height="29" fill="#1E3328"/>
+  <path d="M1 1h86v1H2v28H1z" fill="#FFF" opacity="0.55"/>
+  <path d="M87 1v29H1v-1h85V1z" fill="#000" opacity="0.45"/>
+  <rect x="3" y="3" width="25" height="25" fill="#C8641E"/>
+  <path d="M3 27h25v1H3zM27 3h1v25h-1z" fill="#000" opacity="0.35"/>
+  <text x="15.5" y="17.9" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="6.5" font-weight="bold" text-anchor="middle" fill="#FFF" shape-rendering="auto">WWW</text>
+  <g shape-rendering="auto">
+    <text x="57" y="13" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#E9D46A" textLength="54" lengthAdjust="spacingAndGlyphs">MY HOMEPAGE</text>
+    <text x="57" y="24" font-family="Verdana,Tahoma,Geneva,sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#E9D46A" textLength="54" lengthAdjust="spacingAndGlyphs">CLICK HERE!</text>
+  </g>
+</svg>
