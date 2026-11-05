@@ -14,6 +14,12 @@
 
 <br>
 
+<p align="center">
+  <a href="https://www.last.fm/user/Drack112"><img src="https://drack112-ten.vercel.app/api/mp3" alt="LUCKY-MP3: what Drack112 is listening to on Last.fm" width="100%" /></a>
+</p>
+
+<br>
+
 <p align="center"><samp>· ˚ ✦ · ˚ ✦ · ˚ ✦ · ˚ ✦ · ˚ ✦ · ˚ ✦ ·</samp></p>
 
 <p align="center">
