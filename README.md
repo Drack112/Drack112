@@ -18,8 +18,6 @@
 
 <p align="center">
   <a href="https://drack112.vercel.app/"><img src="assets/web/my-homepage.svg" alt="My homepage" /></a>
-  <img src="assets/web/luckyuro-approved.svg" alt="Luckyuro approved" />
-  <img src="assets/web/spy-of-smiles.svg" alt="Spy of smiles" />
   <img src="assets/web/cookies-accepted.svg" alt="Cookies accepted" />
   <img src="assets/web/bells-on.svg" alt="Jingle bells on" />
   <img src="assets/web/stitched-with-love.svg" alt="Stitched with love" />
